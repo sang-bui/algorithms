@@ -1,6 +1,4 @@
 
-
-
 def linearSearch(searchValue, array):
     for i in range(len(array) - 1):
         if array[i] == searchValue:
