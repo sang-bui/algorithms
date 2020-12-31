@@ -16,6 +16,7 @@ class QuickSort{
     private static int partition(ArrayList<Integer> arr, int start, int end){
         int i = start - 1;
         for(int j = start; j<end; j++){
+            // If J is less than the pivot, than you know that I has to be greater than the pivot, so you swap them.
             if(arr.get(j) < arr.get(end)){
                 i++;
                 int temp = arr.get(j);
@@ -23,6 +24,7 @@ class QuickSort{
                 arr.set(i, temp);
             }
         }
+        // Pivot swap.
         int temp = arr.get(i+1);
         arr.set(i+1, arr.get(end));
         arr.set(end, temp);
