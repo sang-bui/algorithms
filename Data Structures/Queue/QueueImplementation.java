@@ -3,21 +3,25 @@
 
 class Queue{
 
-    private static int top;
-    private static int back;
-    private static int size;
-    private static int[] queue;
+    private int top;
+    private int back;
+    private int size;
+    private int[] queue;
 
     public Queue(int n){
         top = 0;
         back = 0;
         size = n;
         queue = new int[size];
-
     }
+    
     public void enqueue(int a){
-        queue[back] = a;
-        back++;
+        if(back == size)
+            System.out.println("The Queue is full!");
+        else{
+            queue[back] = a;
+            back++;
+        }
     }
     
     public void dequeue(){
