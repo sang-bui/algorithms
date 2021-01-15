@@ -14,7 +14,7 @@ class Main{
                 if(numbers.get(v) > numbers.get(v+1)){ // Checks the element V and V+1 if V is greater.
                     // If they are greater, swap the positions.
                     int temp = numbers.get(v);
-                    numbers.set(v, numbers.get(v+1));
+                    numbers.set(v, numbers.get(v+1)); 
                     numbers.set(v+1, temp);
                 }
             }
