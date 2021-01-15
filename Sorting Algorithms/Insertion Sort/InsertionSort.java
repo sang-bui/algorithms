@@ -20,5 +20,6 @@ class InsertionSort{
             }
         }
         System.out.println(numbers);
+        kb.close();
     }
 }

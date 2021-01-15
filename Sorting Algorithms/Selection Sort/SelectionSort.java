@@ -20,5 +20,6 @@ class SelectionSort{
             numbers.set(minimum, temp);
         }
         System.out.println(numbers);
+        kb.close();
     }
 }    
